@@ -19,7 +19,7 @@ st.set_page_config(
 def load_resources():
     """Load chunks, embeddings, and create index"""
     # Load saved chunks
-    with open("chunks_data.pkl", "rb") as f:
+    with open("chunks_data", "rb") as f:
         data = pickle.load(f)
 
     chunks = data["chunks"]
